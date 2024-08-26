@@ -1,0 +1,110 @@
+dialog{
+    outline: none;
+    border: none;
+    width: 100vw;
+    position: static;
+    background: #282829;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+dialog .dialog-main{
+    height: 100%;
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   justify-content: space-between ;
+    
+}
+dialog section select{
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+dialog section .button{
+    background: #f5f5f7;
+    padding: 10px;
+    color: #000;
+    outline:none;
+    border-radius: 16px;
+    font-size: 16px;
+    width: 100px;
+}
+dialog section form{
+    display: flex;
+    gap: 10px;
+}
+dialog section form[type="submit"]{
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: none;
+
+}
+dialog section hr{
+    width: 60%;
+    
+}
+/* Navbar */
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    gap: 50px;
+}
+.logo{
+    height: 50px;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.nav-items li a{
+color:#fff;
+text-decoration: none;
+}
+.nav-icons img{
+    height: 20px;
+    width: 20px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 100vw;
+    align-items: center;
+
+}
+.hero-img{
+height: 20vh ;
+}
+@media only screen and (max-width: 600px) {
+    dialog section select{
+        width: 80%;
+    }
+    dialog section br{
+        display: none;
+    }
+    dialog .dialog-main{
+        height: 100%;
+        gap: 20px;
+        width: 90%;
+        flex-direction: column;
+        padding: none;
+        
+    }
+
+}
